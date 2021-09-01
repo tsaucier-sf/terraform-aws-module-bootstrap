@@ -84,10 +84,16 @@ variable "kms_master_key_id" {
   default     = ""
 }
 
-variable "logging_bucket" {
+variable "logging_bucket_name" {
   description = "The S3 bucket to send S3 access logs."
   default     = ""
 }
+
+variable "logging_bucket_target_prefix" {
+  description = "To specify a key prefix for log objects."
+  default     = ""
+}
+
 
 variable "noncurrent_version_expiration" {
   description = "Number of days until non-current version of object expires"

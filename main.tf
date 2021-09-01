@@ -144,8 +144,8 @@ resource "aws_s3_bucket" "private" {
     for_each = var.enable_bucket_logging ? [1] : []
 
     content {
-      target_bucket = var.logging_bucket
-      target_prefix = "s3/${var.bucket_name}/"
+      target_bucket = var.logging_bucket_name
+      target_prefix = var.logging_bucket_target_prefix
     }
   }
 
