@@ -99,8 +99,8 @@ Then run `terraform init` to initialize the new backend:
 Initializing modules...
 
 Initializing the backend...
-Do you want to migrate all workspaces to "azurerm"?
-  Both the existing "local" backend and the newly configured "azurerm" backend
+Do you want to migrate all workspaces to "aws"?
+  Both the existing "local" backend and the newly configured "aws" backend
   support workspaces. When migrating between backends, Terraform will copy
   all workspaces (with the same names). THIS WILL OVERWRITE any conflicting
   states in the destination.
